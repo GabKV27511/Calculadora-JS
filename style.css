@@ -1,8 +1,10 @@
 #visorResultados{
     border: 3px solid black;
     width: 100px;
-    height: 20px;
+    height: 25px;
+    display: flex;
+    flex-direction: row-reverse;
 }
-.zerar{
-    width: 75px;
+.zrar{
+    width: 50px;
 }
