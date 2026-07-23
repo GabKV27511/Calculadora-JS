@@ -11,7 +11,7 @@ body{
 }
 #visorResultados{
     background-color: #bbdff1;
-    width: 240px;
+    width: 280px;
     height: 80px;
     border-radius: 5px 5px 0px 0px; 
     display: flex;
@@ -23,14 +23,15 @@ body{
     padding: 20px;
     border-radius: 0px 0px 5px 5px;
     height: 300px;
-    width: 200px;
+    width: 240px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
     
 }
 button{
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     background-color: #0d7ecf;
     border: none;
     border-radius: 10px;
@@ -38,6 +39,7 @@ button{
 #zerarVisor{
     grid-column: span 2;
     background-color: #EFC05A;
+    color: #734f00;
 }
 #igual{
     background-color: #7DCC2C;
