@@ -14,7 +14,7 @@ botoes.forEach(function(numero){
     });
 });
 
-// parte dos operadores
+// parte dos operadores (colocar na tela e outros bugs)
 
 operadores = document.querySelectorAll(".operadores");
 
@@ -22,7 +22,7 @@ operadores.forEach(function(operador){
     
 
     operador.addEventListener("click", function(){
-        let listaDeSinais = "+-";
+        let listaDeSinais = "+-*/";
         let ultimoCaractere = visor.innerText.slice(-1);
 
         if (visor.innerText !== "" && !listaDeSinais.includes(ultimoCaractere)){

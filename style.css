@@ -1,10 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #8ba5bb;
+}
 #visorResultados{
-    border: 3px solid black;
-    width: 100px;
-    height: 25px;
+    background-color: #bbdff1;
+    width: 240px;
+    height: 80px;
+    border-radius: 5px 5px 0px 0px; 
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
 }
-.zrar{
-    width: 50px;
+.botoes{
+    background-color: #75c6f3;
+    padding: 20px;
+    border-radius: 0px 0px 5px 5px;
+    height: 300px;
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
 }
+button{
+    width: 40px;
+    height: 40px;
+    background-color: #0d7ecf;
+    border: none;
+    border-radius: 10px;
+}
+#zerarVisor{
+    grid-column: span 2;
+    background-color: #EFC05A;
+}
+#igual{
+    background-color: #7DCC2C;
+    grid-row: span 2;
+}
+#deletarCaractere{
+    background-color:#E41C0B;
+}
+
