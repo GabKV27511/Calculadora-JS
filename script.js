@@ -3,9 +3,11 @@
 let visor = document.querySelector("#visorResultados");
 let botoes = document.querySelectorAll(".numeros");
 
-
 botoes.forEach(function(numero){
     numero.addEventListener("click", function(){
+        if ( visor.innerText.length >= 19) {
+        return;
+    }
         if (visor.innerText === "0") {
             visor.innerText = numero.innerText;
         } else {
@@ -19,9 +21,8 @@ botoes.forEach(function(numero){
 operadores = document.querySelectorAll(".operadores");
 
 operadores.forEach(function(operador){
-    
-
     operador.addEventListener("click", function(){
+        
         let listaDeSinais = "+-*/";
         let ultimoCaractere = visor.innerText.slice(-1);
 
